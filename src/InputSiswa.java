@@ -22,6 +22,19 @@ public class InputSiswa {
             switch (pilihan) {
                 case 1:
                     // Kode untuk tambah siswa
+                    System.out.print("Masukkan nama siswa: ");
+                    String nama = scanner.nextLine();
+                    System.out.print("Masukkan umur siswa: ");
+                    int umur = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.print("Masukkan kelas siswa: ");
+                    String kelas = scanner.nextLine();
+
+                    Siswa siswa = new Siswa(nama, umur, kelas);
+                    daftarSiswa.add(siswa);
+                    System.out.println("Siswa berhasil ditambahkan.");
+                    System.out.println();
+
                     break;
                 case 2:
                     // Kode untuk tampilkan daftar siswa
