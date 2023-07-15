@@ -51,6 +51,9 @@ public class InputSiswa {
                     break;
                 case 3:
                     // Kode untuk keluar
+                    isRunning = false;
+                    System.out.println("Terima kasih!");
+    
                     break;
                 default:
                     System.out.println("Pilihan tidak valid.");
