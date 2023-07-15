@@ -38,6 +38,16 @@ public class InputSiswa {
                     break;
                 case 2:
                     // Kode untuk tampilkan daftar siswa
+                    System.out.println("Daftar Siswa:");
+                    for (int i = 0; i < daftarSiswa.size(); i++) {
+                        Siswa s = daftarSiswa.get(i);
+                        System.out.println("Siswa " + (i + 1) + ":");
+                        System.out.println("Nama: " + s.getNama());
+                        System.out.println("Umur: " + s.getUmur());
+                        System.out.println("Kelas: " + s.getKelas());
+                        System.out.println();
+                    }
+
                     break;
                 case 3:
                     // Kode untuk keluar
